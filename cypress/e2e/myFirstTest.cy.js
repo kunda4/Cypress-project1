@@ -1,4 +1,4 @@
-describe('This is my first test', ()=> {
+describe('first test', ()=> {
     it('Verify the title-positive test', ()=> {
         cy.visit("https://opensource-demo.orangehrmlive.com/")
         cy.title().should('eq', 'OrangeHRM')
@@ -6,6 +6,6 @@ describe('This is my first test', ()=> {
 
     it('Verify the title-negative test', ()=> {
         cy.visit("https://opensource-demo.orangehrmlive.com/")
-        cy.title().should('eq', 'OrangeHRM123')
+        cy.title().should('eq', 'OrangeHRM12345')
     })
 })
